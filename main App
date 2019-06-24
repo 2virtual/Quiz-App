@@ -22,8 +22,8 @@ class QuestionApp extends Component {
       answer: '',
       answersCount: {
         Smart: 0,
-        Subpar: 0,
-        Confused: 0
+        Below_Average: 0,
+        Clueless: 0
       },
       result: ''
     };
@@ -115,7 +115,7 @@ class QuestionApp extends Component {
     if (result.length === 1) {
       this.setState({ result: result[0] });
     } else {
-      this.setState({ result: 'like an Average dude' });
+      this.setState({ result: 'Average' });
     }
   }
  
